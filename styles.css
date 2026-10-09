@@ -151,6 +151,17 @@ p { margin: 0; }
 .step h3 { font-size: 18px; }
 .step p { color: var(--muted); font-size: 14px; }
 
+/* About */
+.about { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+.about h2 { font-size: clamp(30px, 4vw, 42px); font-weight: 800; }
+.about p { color: var(--muted); font-size: 17px; margin-top: 16px; max-width: 520px; }
+.about p strong { color: var(--text); }
+.about__links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.about__facts { display: flex; flex-direction: column; gap: 12px; }
+.fact { padding: 20px 22px; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; display: flex; flex-direction: column; gap: 4px; }
+.fact strong { font-size: 16px; }
+.fact span { font-size: 14px; color: var(--muted); }
+
 /* Pricing */
 .plan { position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 32px 28px; display: flex; flex-direction: column; gap: 18px; }
 .plan--featured { background: var(--surface-2); border: 2px solid var(--accent); }
@@ -210,7 +221,7 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
   .grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .contact { grid-template-columns: 1fr; }
+  .contact, .about { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {
   .section { padding: 72px 0; }
@@ -225,4 +236,5 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
   .device__phone { right: 0; bottom: -24px; width: 120px; }
   .btn { width: 100%; }
   .hero__cta .btn, .contact__cta .btn { width: 100%; }
+  .about__links .btn { width: auto; flex-grow: 1; }
 }

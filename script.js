@@ -6,7 +6,7 @@ const CONFIG = {
   whatsapp: '5500000000000',            // só números, com DDI 55 + DDD. Ex: 5511999998888
   instagram: 'https://www.instagram.com/destack_studio/',
   email: 'contato@seudominio.com.br',
-  cidade: 'Sua cidade, UF',
+  cidade: 'Santa Catarina, BR',
   mensagemPadrao: 'Olá! Vim pelo site da DeStack_ Studio e quero um orçamento.',
 };
 
